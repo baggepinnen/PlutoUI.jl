@@ -120,7 +120,7 @@ begin
 		# checked = [k in defaults for (k,v) in mc.options]
 		# 
 		# More complicated to fix https://github.com/JuliaPluto/PlutoUI.jl/issues/106
-		defaults_copy = copy(defaults)
+		defaults_copy = (similar(defaults) .= defaults)
 		checked = [
 			let
 				i = findfirst(isequal(k), defaults_copy)

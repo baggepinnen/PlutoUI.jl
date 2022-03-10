@@ -4,7 +4,7 @@ import Markdown
 export Resource, RemoteResource, LocalResource, DownloadButton
 
 """
-    Resource(src::String, mime=mime_from_filename(src)[, html_attributes::Pair...])
+    Resource(src::String, mime=mime_fromfilename(src)[, html_attributes::Pair...])
 
 A container for a URL-addressed resource that displays correctly in rich IDEs.
 
